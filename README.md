@@ -42,7 +42,16 @@ This project combines a Flask backend with a React frontend to implement a hybri
 
 ## Installation
 
-### Backend Setup
-1. **Navigate to the backend folder**:
+# Project Setup Instructions
+
+## Backend Setup
+
+1. **Create a virtual environment** (optional but recommended):
    ```bash
-   cd WEBDEV/server
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install required dependencies
+
+pip install Flask pandas python-dotenv transformers numpy torch datasets scikit-learn scipy
+
