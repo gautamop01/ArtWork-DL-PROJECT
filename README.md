@@ -1,5 +1,3 @@
-![image](https://github.com/user-attachments/assets/d8ffc5eb-159b-4bfc-a594-11854a26c740)# ArtWork-DL Project
-
 ## Overview
 A hybrid recommendation system combining Flask backend with React frontend. Features include various filtering techniques, a chatbot interface, and a social media-like user experience.
 
