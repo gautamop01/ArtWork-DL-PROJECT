@@ -1,0 +1,89 @@
+/* Floating Action Button */
+.filter-fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s;
+  }
+  
+  .filter-fab:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Filter Sidebar */
+ /* Filter Sidebar */
+.filter-sidebar {
+    position: fixed;
+    top: 10%;
+    right: 10px;
+    width: 300px;
+    height: 80%; /* Reduce height to 80% of the viewport */
+    background: #f8f9fa;
+    box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 999;
+    overflow-y: auto; /* Add scroll for overflow content */
+    transition: transform 0.3s;
+    border-radius: 8px; /* Optional: Rounded corners */
+  }
+  
+  /* Filter Sidebar Title */
+  .filter-sidebar h3 {
+    margin-top: 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    background: #f8f9fa; /* Matches the sidebar background */
+    padding: 10px;
+    z-index: 1; /* Ensures the title stays on top */
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section h4 {
+    margin-bottom: 10px;
+  }
+  
+  .filter-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .filter-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .filter-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .filter-actions button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .filter-actions button:first-child {
+    background: #ddd;
+  }
+  
+  .filter-actions button:last-child {
+    background: #007bff;
+    color: white;
+  }
+  

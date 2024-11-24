@@ -1,0 +1,129 @@
+/* chatbot.css */
+
+/* .interface {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  } */
+  
+  .home {
+    display: flex;
+    flex: 1;
+    position: relative;
+  }
+  
+  .entries-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f0f2f5;
+  }
+  
+  .chat-input-container {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height:120px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1a1a2e;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(255, 223, 0, 0.5);
+  }
+  
+  .chat-text-input {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ffd700;
+    border-radius: 12px;
+    background-color: #2b2b3d;
+    color: #ffffff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .chat-text-input:focus {
+    outline: none;
+    border-color: #ffeb3b;
+  }
+  
+  .chat-input-actions {
+    display: flex;
+    justify-content: flex-end; /* Align icons to the right */
+    align-items: center;
+    gap: 10px; /* Spacing between icons */
+  }
+  
+  .chat-image-upload-label,
+  .chat-send-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #2e2e3e;
+    border: 2px solid #ffd700;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .chat-image-upload-label:hover,
+  .chat-send-button:hover {
+    background-color: #ffd700;
+    transform: scale(1.1);
+  }
+  
+  .chat-image-upload-label span,
+  .chat-send-button span {
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .chat-image-upload-input {
+    display: none;
+  }
+  
+
+  /* chatbot.css */
+
+/* Image Preview Styles */
+.image-preview-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-preview {
+    max-width: 300px;
+    max-height: 300px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    object-fit: contain;
+  }
+  
+  /* Loader Styles */
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .loader {
+    border: 8px solid #f3f3f3; /* Light gray */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Animation for the loader */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

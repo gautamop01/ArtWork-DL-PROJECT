@@ -1,0 +1,131 @@
+.interface{
+    width: 100%;
+}
+.home{
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1.2fr;
+    column-gap: 20px;
+    background-color:rgb(240, 242, 245);
+    padding: 0px 10px;
+    position: relative;
+}
+@media screen and (max-width:1024px){
+    .home{
+        width: 100%;
+        
+        grid-template-columns: 20% 50% 30%;
+        padding: 0px 20px 0px 10px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .home{
+        width: 100%;
+        display:grid;
+        grid-template-columns: 1fr;
+        padding: 0px 10px 0px 10px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:430px){
+    .home{
+        width: 100%;
+        display:grid;
+        grid-template-columns: 1fr;
+        padding: 0px 0px;
+        overflow: hidden;
+        background-color: #f5f5f5
+    }
+}
+
+
+/* frontend/src/pages/Home/Home.css */
+
+.interface {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .home {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .middle {
+    flex: 2;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f0f2f5;
+  }
+  
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+
+  /* frontend/src/pages/Home/Home.css */
+
+.load-more-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .load-more-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .load-more-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  .load-more-button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+
+  .toggle-container {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .toggle-label {
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .toggle-checkbox {
+    display: none;
+  }
+  
+  .toggle-slider {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .toggle-checkbox:checked + .toggle-slider {
+    background-color: #4caf50;
+  }
+  
