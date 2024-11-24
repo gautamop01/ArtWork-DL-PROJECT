@@ -65,7 +65,56 @@ This project combines a Flask backend with a React frontend to implement a hybri
  ```bash
     python server.py
 
+
 # Frontend Setup
 Navigate to the frontend folder:
+
+ ```bash
+    cd WEBDEV
+
+# Install dependencies:
+
+ ```bash
+    npm install
+
+#  Start the React development server:
+
+ ```bash
+    npm start
+
+# Project Structure
+
+.
+├── NCF_hybrid_recommendation.py
+├── chatbotrecommender.ipynb
+├── collaborative_filtering.py
+├── content_based_filtering.py
+├── embedding_based_hybrid_filtering.py
+├── file_loader.py
+├── WEBDEV
+│   ├── package.json
+│   ├── public
+│   │   ├── index.html
+│   │   └── manifest.json
+│   ├── server
+│   │   ├── server.py
+│   │   ├── user_likes.xlsx
+│   │   └── image_likes.xlsx
+│   └── src
+│       ├── App.js
+│       ├── Components
+│       │   ├── Home
+│       │   │   ├── Homepage.js
+│       │   │   └── Feedposts.js
+│       ├── Pages
+│       │   └── Home
+│       │       ├── Home.js
+│       │       └── Chatbot.jsx
+│       └── index.js
+└── model.ipynb
+
+
+
+
 
 
