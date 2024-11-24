@@ -53,5 +53,19 @@ This project combines a Flask backend with a React frontend to implement a hybri
 
 # Install required dependencies
 
-pip install Flask pandas python-dotenv transformers numpy torch datasets scikit-learn scipy
+
+1. **Create a virtual environment** (optional but recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install required dependencie
+# Run the Flask server:
+
+ ```bash
+    python server.py
+
+# Frontend Setup
+Navigate to the frontend folder:
+
 
