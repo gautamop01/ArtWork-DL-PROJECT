@@ -1,89 +1,77 @@
-# ArtWork-DL-PROJECT
-
-# Project Title
+# ArtWork-DL Project
 
 ## Overview
-
-This project combines a Flask backend with a React frontend to implement a hybrid recommendation system. It includes various filtering techniques, a chatbot interface, and a social media-like user experience.
-
----
+A hybrid recommendation system combining Flask backend with React frontend. Features include various filtering techniques, a chatbot interface, and a social media-like user experience.
 
 ## Features
-
-- **Backend**: Implements Flask APIs for hybrid recommendation algorithms.
-- **Frontend**: Developed using React for a dynamic user interface.
-- **Recommendation Algorithms**: Includes collaborative filtering, content-based filtering, and embedding-based hybrid filtering.
-- **Interactive UI**: User-friendly interface with components for comments, profiles, and home feed.
-- **Data Processing**: Utilizes `pandas` and `numpy` for data manipulation.
-- **Machine Learning Models**: Built with `pytorch` and `transformers` for recommendations.
-
----
+- **Backend**: Flask APIs implementing hybrid recommendation algorithms
+- **Frontend**: React-based dynamic user interface
+- **Recommendation Algorithms**: 
+  - Collaborative filtering
+  - Content-based filtering
+  - Embedding-based hybrid filtering
+- **Interactive UI**: User-friendly interface with comments, profiles, and home feed
+- **Data Processing**: Pandas and NumPy integration
+- **Machine Learning**: PyTorch and Transformers for recommendation models
 
 ## Prerequisites
 
-### Backend
-1. Python 3.7 or higher
-2. Required libraries:
-   - Flask
-   - pandas
-   - python-dotenv
-   - transformers
-   - numpy
-   - pytorch
-   - datasets
-   - sklearn
-   - scipy
+### Backend Requirements
+- Python 3.7 or higher
+- Required Python packages:
+  ```bash
+  pip install flask pandas python-dotenv transformers numpy torch datasets scikit-learn scipy
+  ```
 
-### Frontend
-1. Node.js (16.x or later recommended)
-2. NPM (installed with Node.js)
-
----
+### Frontend Requirements
+- Node.js (16.x or later recommended)
+- NPM (comes with Node.js)
 
 ## Installation
 
-# Project Setup Instructions
+### Backend Setup
 
-## Backend Setup
+1. Create and activate virtual environment:
+```bash
+# Create virtual environment
+python -m venv venv
 
-1. **Create a virtual environment** (optional but recommended):
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+# Activate virtual environment
+# On Windows:
+venv\Scripts\activate
+# On Unix or MacOS:
+source venv/bin/activate
+```
 
-# Install required dependencies
+2. Install dependencies:
+```bash
+pip install flask pandas python-dotenv transformers numpy torch datasets scikit-learn scipy
+```
 
+3. Start Flask server:
+```bash
+python server.py
+```
 
-1. **Create a virtual environment** (optional but recommended):
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+### Frontend Setup
 
-# Install required dependencie
-# Run the Flask server:
+1. Navigate to frontend directory:
+```bash
+cd WEBDEV
+```
 
- ```bash
-    python server.py
+2. Install dependencies:
+```bash
+npm install
+```
 
+3. Start React development server:
+```bash
+npm start
+```
 
-# Frontend Setup
-Navigate to the frontend folder:
-
- ```bash
-    cd WEBDEV
-
-# Install dependencies:
-
- ```bash
-    npm install
-
-#  Start the React development server:
-
- ```bash
-    npm start
-
-# Project Structure
-
+## Project Structure
+```
 .
 ├── NCF_hybrid_recommendation.py
 ├── chatbotrecommender.ipynb
@@ -92,29 +80,54 @@ Navigate to the frontend folder:
 ├── embedding_based_hybrid_filtering.py
 ├── file_loader.py
 ├── WEBDEV
-│   ├── package.json
-│   ├── public
-│   │   ├── index.html
-│   │   └── manifest.json
-│   ├── server
-│   │   ├── server.py
-│   │   ├── user_likes.xlsx
-│   │   └── image_likes.xlsx
-│   └── src
-│       ├── App.js
-│       ├── Components
-│       │   ├── Home
-│       │   │   ├── Homepage.js
-│       │   │   └── Feedposts.js
-│       ├── Pages
-│       │   └── Home
-│       │       ├── Home.js
-│       │       └── Chatbot.jsx
-│       └── index.js
-└── model.ipynb
+│   ├── package.json
+│   ├── public
+│   │   ├── index.html
+│   │   └── manifest.json
+│   ├── server
+│   │   ├── server.py
+│   │   ├── user_likes.xlsx
+│   │   └── image_likes.xlsx
+│   └── src
+│       ├── App.js
+│       ├── Components
+│       │   ├── Home
+│       │   │   ├── Homepage.js
+│       │   │   └── Feedposts.js
+│       ├── Pages
+│       │   └── Home
+│       │       ├── Home.js
+│       │       └── Chatbot.jsx
+│       └── index.js
+```
 
+## Technologies Used
 
+### Backend
+- Flask
+- Python libraries:
+  - pandas
+  - python-dotenv
+  - transformers
+  - numpy
+  - PyTorch
+  - datasets
+  - scikit-learn
+  - scipy
 
+### Frontend
+- React.js
+- Node.js
+- NPM packages (defined in package.json)
 
+## Getting Started
 
+1. Clone the repository
+2. Follow the Backend Setup instructions
+3. Follow the Frontend Setup instructions
+4. Access the application at `http://localhost:3000`
 
+## Notes
+- Ensure all required Python packages are installed before running the backend
+- The frontend development server runs on port 3000 by default
+- The Flask backend server should be running simultaneously with the frontend
