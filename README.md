@@ -29,6 +29,12 @@ A hybrid recommendation system combining Flask backend with React frontend. Feat
 
 ## Installation
 
+Make A File Under This Folder, Like This :
+WEBDEV/server/combined_embeddings.npy
+
+Download File From Here :
+https://drive.google.com/file/d/1tsCP3zYCchn2MkGmqhdbIKWG4x9PU28Y/view
+
 ### Backend Setup
 
 1. Create and activate virtual environment:
@@ -131,3 +137,6 @@ npm start
 - Ensure all required Python packages are installed before running the backend
 - The frontend development server runs on port 3000 by default
 - The Flask backend server should be running simultaneously with the frontend
+
+# DEMO 
+
