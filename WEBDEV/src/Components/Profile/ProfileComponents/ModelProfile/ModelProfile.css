@@ -1,0 +1,61 @@
+.modelForm{
+    margin-top: 20px;
+}
+.row1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.modelForm .inputBox1{
+    width: 100%;
+    margin-bottom: 30px;
+    height: 50px;
+}
+.modelForm .inputBox1 input{
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+}
+.modelForm .inputBox1 input:focus{
+    border: 1px solid gray;
+}
+.modelBtn{
+    font-size: 16px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    background: linear-gradient(107deg, rgb(121, 119, 119) 11.1%, rgb(81, 80, 78) 95.3%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+@media screen and (max-width:430px){
+    .modelForm{
+        margin-top: 10px;
+    }
+    .row1{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    .modelForm .inputBox1{
+        height: 40px;
+    }
+    .modelBtn{
+        font-size: 14px;
+        padding: 5px 10px;
+        text-transform: capitalize;
+        background-color: gray;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+    
+
+    
+}
