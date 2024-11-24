@@ -9,7 +9,7 @@ A hybrid recommendation system combining Flask backend with React frontend. Feat
 - **Recommendation Algorithms**: 
   - Collaborative filtering
   - Content-based filtering
-  - NCF Based Hybrid filtering
+  - NCF Based Hybrid system
 - **Interactive UI**: User-friendly interface with comments, profiles, and home feed
 - **Data Processing**: Pandas and NumPy integration
 - **Machine Learning**: PyTorch and Transformers for recommendation models
